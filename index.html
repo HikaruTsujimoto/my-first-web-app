@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>〇〇（あなたの名前/ハンドル名）のポートフォリオ</title>
+    <style>
+        /* 基本的なリセットとフォント設定 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* コンテナ */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* ヘッダー/プロフィールセクション */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007bff; /* メインカラー */
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 丸い画像 */
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ddd;
+        }
+
+        /* セクション見出し */
+        h2 {
+            color: #007bff;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* スキルリスト */
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-list li {
+            background-color: #e9f5ff;
+            color: #007bff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* 趣味などのセクション */
+        .hobby-item {
+            margin-bottom: 15px;
+        }
+
+        .hobby-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* その他（SNSリンクなど） */
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+    <div class="container">
+        <header>
+            <img src="profile_placeholder.png" alt="あなたの顔写真やアバター" class="profile-image">
+            <h1>〇〇（あなたの名前/ハンドル名）</h1>
+            <p><strong>フリーランスのWebエンジニア志望 / 新しい技術への挑戦が好き</strong></p>
+            <p>
+                「より使いやすく、より面白い」Web体験を創出することを目指しています。<br>
+                特にフロントエンド技術とUI/UXデザインに興味があります。
+            </p>
+            <div class="social-links">
+                <a href="https://twitter.com/your_id" target="_blank">Twitter</a>
+                <a href="https://github.com/your_id" target="_blank">GitHub</a>
+                <a href="mailto:your.email@example.com">Emailで連絡</a>
+            </div>
+        </header>
+
+        <section id="skills">
+            <h2>🛠 スキル（私の能力）</h2>
+            <ul class="skill-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React / Vue.js (学習中)</li>
+                <li>Git/GitHub (バージョン管理)</li>
+                <li>Photoshop (簡単な画像編集)</li>
+                <li>バックエンド言語 (Python/Node.jsなど)</li>
+            </ul>
+        </section>
+
+        <section id="profile">
+            <h2>👤 プロフィール＆興味</h2>
+            <div class="hobby-item">
+                <strong>💡 現在の注力分野:</strong>
+                <p>Webアクセシビリティの向上。すべての人にとって使いやすいインターフェースの設計に挑戦しています。</p>
+            </div>
+            <div class="hobby-item">
+                <strong>🎮 趣味:</strong>
+                <p>レトロゲーム収集と週末のハイキング。自然からインスピレーションを得ることも多いです。</p>
+            </div>
+            <div class="hobby-item">
+                <strong>🚀 将来の目標:</strong>
+                <p>自分の手掛けたサービスが、世界中のユーザーに使われるようになることです。</p>
+            </div>
+        </section>
+
+        <footer>
+            <p style="text-align: center; font-size: 0.8em; margin-top: 50px;">&copy; 2024 Your Name/Handle Name</p>
+        </footer>
+    </div>
 </body>
 </html>
